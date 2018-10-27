@@ -1,0 +1,29 @@
+<section class="py-2">
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <h1 class="display-3 mt-3 pt-5">
+                Ceramics
+            </h1>
+            <h1><p class="lead">Buy Now</p></h1>
+            <form action="/charge" method="POST">
+                <script
+                    src="https://checkout.stripe.com/checkout.js"
+                    class="stripe-button"
+                    data-key='pk_test_vzItG7f0Smx4FpOd7N03Xoaw'
+                    data-amounts='2000'
+                    data-name='Ceramics Payment'
+                    data-description='To Buy your ceramic items'
+                    data-img="https://stripe.com/img/documentation/checkout/marketplace.png"
+                    data-locate='auto'>
+                </script>
+                <script>
+                    document.getElementsByClassName('stripe-button-e1')[0]
+                    .style.display='none';
+                </script>
+                <button type="submit" class="btn btn-outline-dark text-white btn-lg">Purchase $25</button>
+            </form>
+        </div>
+    </div>
+    <div class="col-md-6">
+    </div>
+</section>
